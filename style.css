@@ -1,0 +1,122 @@
+:root {
+    --dark-blue: #0A3871;
+    --main-color: #F3F5FC;
+    --light-blue: #D8DFE8;
+    --inter-font: "Inter", sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--main-color);
+    font-family: var(--inter-font);
+}
+header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+}
+header img{
+    width: 120px;
+    height: 47px;
+}
+.form__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvh;
+}
+.form__input{
+    width: 100%;
+    max-width: 650px;
+    border-color: transparent;
+    height: 64dvh;
+    background: transparent;
+    color: var(--dark-blue);
+    font-family: var(--inter-font);
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    overflow: auto;
+    
+}
+::placeholder {
+    color: var(--dark-blue);
+    font-family: var(--inter-font);
+    font-size: 3.2rem;
+}
+.alert__msj {
+    margin-bottom: 1.5rem;
+}
+.form__btn {
+    background: var(--dark-blue);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue);
+    font-weight: 600;
+}
+.form__btn__secondary {
+    background: var(--light-blue);
+    color: var(--dark-blue);
+}
+.result {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 70dvh;
+    border-radius: 32px;
+    max-width: 75rem;
+    width: 100%;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.result__container{
+    font-size: medium;
+    
+}
+.result__img {
+    display: block;
+    
+}
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px)  {
+    main {
+        flex-direction: column;
+    }
+    .result__img {
+        display: none;
+        
+    }
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 120px;
+    height: 20px;
+    border-radius: 20px;
+    background:
+     linear-gradient(rgb(66, 170, 211) 0 0) 0/0% no-repeat
+     lightblue;
+    animation: l2 2s infinite steps(10);
+  }
+  @keyframes l2 {
+      100% {background-size:110%}
+  }
